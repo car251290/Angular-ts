@@ -1,0 +1,27 @@
+<div class="add-transaction-container">
+    <h2>Add Transaction</h2>
+    <form (submit)="addTransaction()">
+      <label for="description">Description</label>
+      <input
+        id="description"
+        [(ngModel)]="description"
+        name="description"
+        type="text"
+        required
+      />
+      <label for="amount">Amount</label>
+      <input
+        id="amount"
+        [(ngModel)]="amount"
+        name="amount"
+        type="number"
+        required
+      />
+      <label for="type">Type</label>
+      <select [(ngModel)]="type" name="type" id="type" required>
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button type="submit">Add Transaction</button>
+    </form>
+  </div>
