@@ -3,6 +3,6 @@ export class Transaction {
       public id: number,
       public description: string,
       public amount: number,
-      public type: string // 'income' or 'expense'
+      public type: string 
     ) {}
   }

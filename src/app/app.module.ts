@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
 import { TransactionListComponent} from './components/transaction-list/transaction-list.component';
 import { AddTransactionComponent } from './components/add-transaction/add-transaction.component';
-import { Transaction } from './models/transaction.model';
+
 import { TransactionService } from './services/transaction.service';
 
 @NgModule({
@@ -15,6 +15,7 @@ import { TransactionService } from './services/transaction.service';
     AppComponent,
     TransactionListComponent,
     AddTransactionComponent
+  
   ],
   imports: [
     BrowserModule,
@@ -25,4 +26,7 @@ import { TransactionService } from './services/transaction.service';
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class AppModule { 
+  title = 'transaction-app';
+
+}

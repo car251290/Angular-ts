@@ -1,0 +1,93 @@
+/* Container for the transaction list */
+.transaction-list {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e1e1;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Title for the transaction list */
+  h3 {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  /* Header styles */
+  th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Row hover effect */
+  tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Styling for transaction type (income/expense) */
+  .income {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .expense {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Button styles for transaction actions */
+  button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  /* Edit button */
+  button.edit-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  button.edit-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Delete button */
+  button.delete-btn {
+    background-color: red;
+    color: white;
+  }
+  
+  button.delete-btn:hover {
+    background-color: darkred;
+  }
+  
+  /* Button container (for alignment) */
+  button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
