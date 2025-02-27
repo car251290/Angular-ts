@@ -7,14 +7,15 @@ import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
 import { TransactionListComponent} from './components/transaction-list/transaction-list.component';
 import { AddTransactionComponent } from './components/add-transaction/add-transaction.component';
-
+import { TransactionChartComponent } from './components/transaction-chart/TransactionChart.component';
 import { TransactionService } from './services/transaction.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     TransactionListComponent,
-    AddTransactionComponent
+    AddTransactionComponent,
+    TransactionChartComponent
   
   ],
   imports: [
